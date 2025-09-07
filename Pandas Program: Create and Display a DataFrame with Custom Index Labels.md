@@ -1,24 +1,47 @@
-# Pandas Program: Create and Display a DataFrame with Custom Index Labels
 
-## 🎯 Aim
+## Aim
+Create a Pandas program to join the two given dataframes along rows and assign all data.
 
-To create and display a **DataFrame** using the **Pandas** library in Python from a given dictionary, and apply specific index labels to the rows.
 
----
 
-## 🧠 Algorithm
+## Algorithm
+```
+Step 1: Start the program. 
+Step 2: Take the necessary input(s) from the user. 
+Step 3: Process the input(s) using suitable operations or conditions. 
+Step 4: Display the result/output to the user. Step 5: Stop the program.
 
-1. **Import Libraries**: Import the required libraries – `pandas` and `numpy`.
-2. **Create Dictionary**: Define a dictionary `exam_data` with keys: `'name'`, `'score'`, `'attempts'`, and `'qualify'`.
-3. **Index Labels**: Create a list of custom index labels called `labels`.
-4. **Create DataFrame**: Use `pd.DataFrame()` to create the DataFrame by passing the dictionary and index labels.
-5. **Display Output**: Display the DataFrame using `print()` or by simply calling the DataFrame variable.
+```
+## Program
+```
+import pandas as pd
 
----
+# Get user input for two dictionaries
+data1 = eval(input())
+data2 = eval(input())
 
-## 💻 Program
-Add code here
+# Create DataFrames
+df1 = pd.DataFrame(data1)
+df2 = pd.DataFrame(data2)
+
+# Print original DataFrames
+print("Original DataFrames:")
+print(df1)
+print("-------------------------------------")
+print(df2)
+
+# Join the two DataFrames along rows
+result = pd.concat([df1, df2])
+
+# Display the result
+print("\nJoin the said two dataframes along rows:")
+print(result)
+
+```
+
 
 ## Output
+<img width="1220" height="744" alt="image" src="https://github.com/user-attachments/assets/4c6fd73e-b705-4352-8ff6-b8511779c57d" />
 
 ## Result
+The Program was ececuted successfully
