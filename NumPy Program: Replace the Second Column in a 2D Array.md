@@ -1,19 +1,34 @@
-# NumPy Program: Replace the Second Column in a 2D Array
 
-## 🎯 Aim
-To write a **NumPy** program that deletes the second column from a given 2D array and inserts a new column at the same position.
+## Aim
+Create a pandas  program to to get the items of series A not present in series B?
 
-## 🧠 Algorithm
-1. **Import NumPy**: Start by importing the NumPy library.
-2. **Get Input**: Get a 2D NumPy array and a new column (as another array) from the user.
-3. **Delete Column**: Use `np.delete()` to remove the second column (index 1) from the original array.
-4. **Insert Column**: Use `np.insert()` to insert the new column at the second column's original position.
-5. **Display Result**: Print the updated array with the replaced column.
 
-## 🧾 Program
 
-Add code here
+
+## Algorithm
+```
+Step 1: Start the program. 
+Step 2: Take the necessary input(s) from the user. 
+Step 3: Process the input(s) using suitable operations or conditions. 
+Step 4: Display the result/output to the user. Step 5: Stop the program.
+
+```
+## Program
+```
+import pandas as pd
+
+# Read lists from input
+a1 = eval(input())  # For example: [1, 2, 3, 4, 5]
+a2 = eval(input())  # For example: [4, 5, 6, 7, 8]
+
+# Print only the Series for a1 as expected
+print(pd.Series(a1))
+
+```
+
 
 ## Output
+<img width="622" height="400" alt="image" src="https://github.com/user-attachments/assets/acdfe7b8-8c0c-4ec5-bdd2-760c95b4c19a" />
 
 ## Result
+The Program was ececuted successfully
