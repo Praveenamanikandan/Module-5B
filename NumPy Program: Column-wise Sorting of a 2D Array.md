@@ -1,19 +1,27 @@
-# NumPy Program: Column-wise Sorting of a 2D Array
 
-## 🎯 Aim
-To write a **NumPy** program that sorts the elements in each column of a given 2D array in ascending order.
+## Aim
+Write a numpy program to replace all odd numbers in the given array with -1
 
-## 🧠 Algorithm
 
-1. **Import NumPy**: Start by importing the NumPy library.
-2. **Get Input**: Accept a 2D NumPy array from the user.
-3. **Sort Column-wise**: Use the `np.sort()` function with `axis=0` to sort each column in ascending order.
-4. **Store Result**: Store the sorted result in a new array.
-5. **Display Output**: Print the original array and the column-wise sorted array.
+## Algorithm
+```
+Step 1: Start the program. 
+Step 2: Take the necessary input(s) from the user. 
+Step 3: Process the input(s) using suitable operations or conditions. 
+Step 4: Display the result/output to the user. Step 5: Stop the program.
 
-## 🧾 Program
-Add code here
+```
+## Program
+```
+import numpy as np
+arr = np.array(eval(input()))
+arr[arr % 2 != 0] = -1
+print(arr)
+```
+
 
 ## Output
+<img width="1089" height="227" alt="image" src="https://github.com/user-attachments/assets/24ff053a-f79f-44bd-9449-7bd26764fe1b" />
 
 ## Result
+The Program was ececuted successfully
